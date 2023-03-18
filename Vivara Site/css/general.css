@@ -1,0 +1,10 @@
+.open{
+    display: block;
+}
+
+.close{
+    display: none;
+}
+body {
+    overflow-x: hidden;
+}

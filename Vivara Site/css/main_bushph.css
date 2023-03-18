@@ -1,0 +1,31 @@
+#main1-busph {
+    display: block;
+    background-image: url('../img/main-img-top.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #fff;
+    height: 850px;
+    width: 100vw;
+    margin-top: 100px;
+}
+
+#main1-busph h1 {
+    position: relative;
+    top: 70px;
+    font-size: 250%;
+}
+
+#main1-busph h2 {
+    position: relative;
+    top: 60px;
+    font-size: 250%;
+}
+
+#main1-busph h5 {
+    position: relative;
+    top: 80px;
+    font-size: 150%;
+}
+

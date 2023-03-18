@@ -1,0 +1,150 @@
+
+#italy-gradient-info {
+    background: url('../img/italy-gradient-flag.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 170%;
+    font-weight: bold;
+    
+    margin-top: 100px;
+}
+
+#main-md-it-container h1 {
+    margin: 30px;
+   
+}
+
+#main-md-it-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#md-it-destinatii {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-destination {
+    width: 25%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    gap: 15px;
+}
+
+.item-destination h3 {
+    font-size: 150%;
+}
+
+#destination-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.p-img {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    width: 100%;
+}
+
+.p-img img {
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: start;
+    width: 15px;
+}
+
+.item-destination button {
+    margin-left: 60px;
+    margin-top: 15px;
+    width: 180px;
+    height: 30px;
+    border: 1px solid #663B9E;
+    background-color: #663B9E;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item-destination button:hover {
+    background-color: white;
+    color: #663B9E;
+    transition-duration: 0.2s;
+}
+
+.item-destination a {
+    text-decoration: none;
+}
+
+.viber-btn-img {
+    height: 15px;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#home{
+    width: 200px;
+    height: 40px;
+    background: linear-gradient(45deg, #00b09b, #96c93d);
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-size: 120%;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+    #md-it-destinatii{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-destination{
+        width: 100%;
+    }
+
+    #italy-gradient-info h3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .second{
+        font-size: 20px;
+    }
+}

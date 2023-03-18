@@ -1,0 +1,328 @@
+#contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.telephone-numbers a {
+    text-decoration: none;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.contact-details h2 {
+    font-size: 130%;
+}
+
+.header {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 10px;
+    color: rgb(100, 98, 98);
+}
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 0 10px 0;
+    color: gray;
+}
+
+.detail h4 {
+    font-size: 20px !important;
+    padding-bottom: 10px;
+}
+
+.detail input {
+    min-width: 200px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+}
+
+.rezerveBtn {
+    background-color: #61ce70;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+
+.rezerveBtn span {
+    background-color: transparent;
+    color: #fff;
+
+}
+
+.rezerveBtn img {
+    background-color: transparent;
+    width: 16px;
+    margin-right: 5px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    /* z-index: 1; */
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    z-index: 1;
+    padding: 30px 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.socials img {
+    width: 40px;
+    margin: 5px;
+    position: relative;
+    top: 25px;
+}
+
+.logo {
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.contact-info.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: 1000px;
+}
+
+.telephone-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px;
+}
+
+.telephone {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.flag {
+    /* height: 40px; */
+    width: 40px;
+    border-radius: 50%;
+}
+
+.moldova {
+    margin-right: 70px;
+}
+
+.italy {
+    margin-right: 70px;
+}
+
+.callBtn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: fit-content;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #61ce70;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 15px;
+}
+
+.callBtn img {
+    background-color: none;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.callBtn span {
+    color: #FFFFFF;
+}
+
+.rezerveBtn:hover,
+.callBtn:hover {
+    cursor: pointer;
+    transform: scale(1, 1.1);
+}
+
+
+.card-container {
+    perspective: 500px;
+    margin-bottom: 30px;
+}
+
+.card-container.rotate .card{
+    transform: rotateY( 180deg );
+}
+
+.card {
+    transition: transform .85s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.contact-form, .reserve-form {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FFF;
+    box-shadow: 0 1px 3px 2px rgba(0, 0, 0, 0.2);
+    min-height: 130vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form {
+    z-index: 2;
+}
+
+.reserve-form {
+    transform: rotateY(180deg);
+    z-index: 3;
+}
+
+.card-container{
+    width: 340px;
+    /* margin: 0 auto; */
+    z-index: 2;
+}
+
+.card{
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #444444;
+}
+
+.card-container, .contact-form, .reserve-form {
+    min-height: 450px;
+    border-radius: 4px;
+}
+.contact-form, .reserve-form {
+    /* width: 100%; */
+    /* height: 420px; */
+    border-radius: 4px;
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 10px;
+}
+
+.call{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+    #contact .logo img {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 900px) {
+    #contact{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info{
+        flex-direction: column;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .socials img {
+        width: 70%;
+        margin: 5px;
+        position: relative;
+        top: 5px;
+    }
+
+    .logo {
+        margin: 5px;
+    }
+    
+    .logo img {
+        width: 100%;
+    }
+
+
+    .telephone-numbers {
+        align-items: center;
+    }
+    
+    .telephone {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    
+    .flag {
+        height: 40px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        width: fit-content !important;
+    }
+    
+    .moldova,
+    .italy {
+        margin-right: 0;
+    }
+
+    .callBtn {
+        margin-bottom: 10px;
+    }
+}
